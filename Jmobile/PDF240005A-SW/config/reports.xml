@@ -1,0 +1,25 @@
+<reports>
+ <report_print_default type="Graphics" timeSpec="local" name="default" useDefault="0">
+  <port>File</port>
+  <printer>PDF</printer>
+  <unit>1</unit>
+  <isCustom>false</isCustom>
+  <networkPrinter></networkPrinter>
+  <paper>A4</paper>
+  <paperW>8268</paperW>
+  <paperH>11693</paperH>
+  <colorMode>3 Color CMY</colorMode>
+  <isPortrait>1</isPortrait>
+  <marginTop>0</marginTop>
+  <marginLeft>0</marginLeft>
+  <marginBottom>0</marginBottom>
+  <marginRight>0</marginRight>
+  <graphics/>
+ </report_print_default>
+ <report_txt_default type="Alarm" name="txt-default" useDefault="0">
+  <port>USB</port>
+  <printer>Generic Printer</printer>
+  <roll-paper-chars>80</roll-paper-chars>
+  <alarms/>
+ </report_txt_default>
+</reports>

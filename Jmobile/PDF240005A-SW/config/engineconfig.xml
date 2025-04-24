@@ -1,0 +1,10 @@
+<EngineConfig>
+ <disableWritesOnInvalidTime/>
+ <disablePopupNotificationsOnInvalidTime/>
+ <disablePopupNotificationsOnTimeJumpingBack/>
+ <shortDateFormat>DD/MM/YYYY</shortDateFormat>
+ <longDateFormat>MM/DD/YY - hh:mm:ss</longDateFormat>
+ <listSeparator>,</listSeparator>
+ <decimalSymbol>.</decimalSymbol>
+ <thousandSymbol>,</thousandSymbol>
+</EngineConfig>

@@ -1,0 +1,258 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" staticFile="opt/maintenance_extension.png" downloadPrepDone="true" templateFile="template.jmx" staticOptEnable="true" id="Maintenance_Extension" dataWndSize="0,70" pageName="Maintenance_Extension" pageSize="800,480" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="800" height="480" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads="" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="LUFFING"/>
+    <MLText id="1" L1="ACTIVATE"/>
+    <MLText id="2" L1="MAINT"/>
+    <MLText id="3" L1="EXTENSION"/>
+    <MLText id="4" L1="LOADPIN"/>
+    <MLText id="5" L1="EXTENSION"/>
+    <MLText id="9" L1="OVERRIDES"/>
+    <MLText id="10" L1="SLEWING"/>
+    <MLText id="21" L1="SET END"/>
+    <MLText id="22" L1="SET BEGIN"/>
+    <MLText id="23" L1="m"/>
+    <MLText id="30" L1="Extension position"/>
+    <MLText id="31" L1="Init active"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect19">
+   <wgtStyle x="15" y="330" cx="75" cy="27.50" width="150" height="55" forcePaint="1"/>
+   <object class="ButtonWgt" id="BtnRect19.btn" hmiStyle="type:btn">
+    <wgtStyle form="rectangle" pushColor="rgb(192,192,192)" stroke-width="2" dx="1" dy="-1" type="momentary" fill="rgb(192,192,192)" x="0" y="0" needleColor="rgb(255,255,255)" stroke="rgb(255,255,255)" height="55" downFillColor="rgb(190,190,190)" releasePath="images\win-like.svg" width="150" forcePaint="1" value="0" needlePath="images\win-like-press.svg"/>
+   </object>
+   <object class="LabelWgt" id="BtnRect19.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect2">
+   <wgtStyle x="185" lock="true" y="190" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect2.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="maintenance_slewing.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect2.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="10"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect6">
+   <wgtStyle x="185" lock="true" y="120" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect6.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="maintenance_luffing.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect6.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect7">
+   <wgtStyle x="185" lock="true" y="260" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect7.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+   </object>
+   <object class="LabelWgt" id="BtnRect7.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect8">
+   <wgtStyle x="185" lock="true" y="330" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect8.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="maintenance_loadpin.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect8.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect9">
+   <wgtStyle x="185" y="260" cx="75" cy="27.50" width="150" height="55" forcePaint="1"/>
+   <object class="ButtonWgt" id="BtnRect9.btn" hmiStyle="type:btn">
+    <wgtStyle form="rectangle" pushColor="rgb(192,192,192)" stroke-width="2" dx="1" dy="-1" type="momentary" fill="rgb(192,192,192)" x="0" y="0" needleColor="rgb(255,255,255)" stroke="rgb(255,255,255)" height="55" downFillColor="rgb(190,190,190)" releasePath="images\win-like.svg" width="150" forcePaint="1" value="0" needlePath="images\win-like-press.svg"/>
+   </object>
+   <object class="LabelWgt" id="BtnRect9.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect10">
+   <wgtStyle x="185" y="400" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect10.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="maintenance_overrides.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect10.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.GroupWgt1.roundrect1">
+   <wgtStyle ry="20" x="600" y="272.50" cx="14.55" cy="14.52" stroke="rgb(102,102,102)" width="30" height="30" fill="rgb(85,255,0)" nodeName="rect" forcePaint="136" rx="20"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Init_Extension_Active" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fill">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#005500;#55ff00" name="ColorPaletteCustom"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label7" static="true">
+   <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="360" vert-align="middle" y="260" font-size="18" keypad-type="None" cx="100" marker="true" cy="26.05" font-sizepx="24" width="199" font-bold="true" wrapping="true" height="54" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="31"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2">
+   <wgtStyle x="665" y="260" cx="60" cy="27.50" width="120" height="55" forcePaint="8"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="disabled">
+     <xForms>
+      <xForm class="FormulaXForm" expression="$Not($('CPU_9351/P900_Global/HMI_Enable_Init_Extension'))" compiledExpression="(!$0)" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Enable_Init_Extension" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <object class="ButtonWgt" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.btn" hmiStyle="type:btn">
+    <wgtStyle form="rectangle" pushColor="rgb(192,192,192)" stroke-width="2" dx="1" dy="-1" type="momentary" fill="rgb(100,104,107)" x="0" y="0" needleColor="rgb(255,255,255)" stroke="rgb(255,255,255)" height="55" downFillColor="rgb(100,104,107)" releasePath="images\win-like.svg" width="118.92" holdTime="1000" forcePaint="9" value="0" needlePath="images\win-like-press.svg"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Cmd_Init_Extension" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+    <links>
+     <action class="WriteTagAction" actionID="0" TagValue="1" event="onMouseUp" actionWgt="_TagMgr" attribute="onMouseRelease">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Cmd_Override_OverloadLimits" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="tagSrc"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.txt">
+    <wgtStyle font-family="Roboto" x="0.55" vert-align="middle" y="0" font-size="14" keypad-type="None" cx="61.32" alignment="center" cy="28.60" font-sizepx="19" width="119.47" font-bold="true" wrapping="true" height="55" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label4" static="true">
+   <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="360" vert-align="middle" y="190" font-size="18" keypad-type="None" cx="100" marker="true" cy="26.05" font-sizepx="24" width="199" font-bold="true" wrapping="true" height="54" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="30"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.GroupWgt1.GroupWgt13.GroupWgt1.field4">
+   <wgtStyle frameColor="rgb(255,255,255)" form="Numeric" min="-3.40282e+38" timeSpec="local" font-size="18" step="1" cx="34.50" cy="11.25" decimalDigits="1" x="575" numberFormat="1" showThousandSeparator="false" y="205" font-sizepx="24" font-bold="true" height="24" font-color="rgb(255,255,255)" width="74" alignment="right" max="3.40282e+38" vert-align="middle" forcePaint="8" usingFormat="" font-family="Roboto" text="100.0" value="100.0" keypad-type="Numeric"/>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_ExtensionLength" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt1.GroupWgt13.GroupWgt1.label2" static="true">
+   <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="665" vert-align="middle" y="205" font-size="18" keypad-type="None" cx="36" marker="true" cy="18" font-sizepx="24" width="59" font-bold="true" wrapping="true" height="24" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="23"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Maintenance_Extension@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect1">
+   <wgtStyle x="530" y="330" cx="60" cy="27.50" width="120" height="55" forcePaint="8"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="disabled">
+     <xForms>
+      <xForm class="FormulaXForm" expression="$Not($('CPU_9351/P900_Global/HMI_Enable_Init_Extension'))" compiledExpression="(!$0)" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Enable_Init_Extension" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <object class="ButtonWgt" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect1.btn" hmiStyle="type:btn">
+    <wgtStyle form="rectangle" pushColor="rgb(192,192,192)" stroke-width="2" dx="1" dy="-1" type="momentary" fill="rgb(100,104,107)" x="0" y="0" needleColor="rgb(255,255,255)" stroke="rgb(255,255,255)" height="55" downFillColor="rgb(100,104,107)" releasePath="images\win-like.svg" width="118.92" holdTime="1000" forcePaint="9" value="0" needlePath="images\win-like-press.svg"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Cmd_Init_Extension_SetBegin" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+    <links>
+     <action class="WriteTagAction" actionID="0" TagValue="1" event="onMouseUp" actionWgt="_TagMgr" attribute="onMouseRelease">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Cmd_Override_OverloadLimits" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="tagSrc"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect1.txt">
+    <wgtStyle font-family="Roboto" x="0.55" vert-align="middle" y="0" font-size="14" keypad-type="None" cx="61.32" alignment="center" cy="28.60" font-sizepx="19" width="119.47" font-bold="true" wrapping="true" height="55" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="22"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect5">
+   <wgtStyle x="665" y="330" cx="60" cy="27.50" width="120" height="55" forcePaint="8"/>
+   <dataLinks>
+    <dataLink sourceType="Formula" attribute="disabled">
+     <xForms>
+      <xForm class="FormulaXForm" expression="$Not($('CPU_9351/P900_Global/HMI_Enable_Init_Extension'))" compiledExpression="(!$0)" colorPalette="" name="Formula">
+       <dataLinks>
+        <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Enable_Init_Extension" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="$0"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <object class="ButtonWgt" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect5.btn" hmiStyle="type:btn">
+    <wgtStyle form="rectangle" pushColor="rgb(192,192,192)" stroke-width="2" dx="1" dy="-1" type="momentary" fill="rgb(100,104,107)" x="0" y="0" needleColor="rgb(255,255,255)" stroke="rgb(255,255,255)" height="55" downFillColor="rgb(100,104,107)" releasePath="images\win-like.svg" width="118.92" holdTime="1000" forcePaint="9" value="0" needlePath="images\win-like-press.svg"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Cmd_Init_Extension_SetEnd" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    </dataLinks>
+    <links>
+     <action class="WriteTagAction" actionID="0" TagValue="1" event="onMouseUp" actionWgt="_TagMgr" attribute="onMouseRelease">
+      <dataLinks>
+       <dataLink class="TagMgrWgt" tagType="boolean" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Cmd_Override_OverloadLimits" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="tagSrc"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect5.txt">
+    <wgtStyle font-family="Roboto" x="0.55" vert-align="middle" y="0" font-size="14" keypad-type="None" cx="61.32" alignment="center" cy="28.60" font-sizepx="19" width="119.47" font-bold="true" wrapping="true" height="55" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

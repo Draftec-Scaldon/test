@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Livello_1"
+   width="45.599998"
+   height="42.369999"
+   viewBox="0 0 45.599997 42.369999"
+   overflow="visible"
+   enable-background="new 0 0 40.49 42"
+   xml:space="preserve"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="ic_pl1_119.svg"
+   style="overflow:visible"><metadata
+   id="metadata13197"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs13195"><inkscape:perspective
+     sodipodi:type="inkscape:persp3d"
+     inkscape:vp_x="0 : 21 : 1"
+     inkscape:vp_y="0 : 1000 : 0"
+     inkscape:vp_z="40.490002 : 21 : 1"
+     inkscape:persp3d-origin="20.245001 : 14 : 1"
+     id="perspective13199" /><inkscape:perspective
+     id="perspective17695"
+     inkscape:persp3d-origin="22.8025 : 14.125999 : 1"
+     inkscape:vp_z="45.605 : 21.188999 : 1"
+     inkscape:vp_y="0 : 1000 : 0"
+     inkscape:vp_x="0 : 21.188999 : 1"
+     sodipodi:type="inkscape:persp3d" /><inkscape:perspective
+     id="perspective17695-7"
+     inkscape:persp3d-origin="22.8025 : 14.125999 : 1"
+     inkscape:vp_z="45.605 : 21.188999 : 1"
+     inkscape:vp_y="0 : 1000 : 0"
+     inkscape:vp_x="0 : 21.188999 : 1"
+     sodipodi:type="inkscape:persp3d" /></defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1366"
+   inkscape:window-height="706"
+   id="namedview13193"
+   showgrid="false"
+   inkscape:zoom="5.6190476"
+   inkscape:cx="20.245001"
+   inkscape:cy="21"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Livello_1" />
+<path
+   d="m 30.486549,5.5310169 c 2.971597,0 5.376332,2.387517 5.376332,5.3276191 v 26.182868 c 0,2.94361 -2.404735,5.328496 -5.376332,5.328496 H 5.3763322 C 2.4047351,42.37 0,39.985114 0,37.041504 V 10.858636 C 0,7.9185339 2.4047351,5.5310169 5.3763322,5.5310169 H 30.486549 m 0,2.6638094 H 5.3763322 c -1.48447,0 -2.691709,1.1963898 -2.691709,2.6638097 v 26.182868 c 0,1.470051 1.207239,2.664687 2.691709,2.664687 H 30.486549 c 1.480927,0 2.689938,-1.194636 2.689938,-2.664687 V 10.858636 c 0,-1.4674199 -1.209011,-2.6638097 -2.689938,-2.6638097"
+   id="bgColor00"
+   style="fill:#000000"
+   inkscape:label="#iconcolor"
+   inkscape:connector-curvature="0" />
+</svg>

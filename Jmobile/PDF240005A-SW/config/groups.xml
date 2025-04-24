@@ -1,0 +1,85 @@
+<groups>
+ <group Type="Auto">
+  <name>AddUser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Force Change Initial Password</tag>
+  <tag>Force Logoff Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Calendar@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Load@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_ActualLoad</tag>
+  <tag>CPU_9351/P900_Global/HMI_Outreach</tag>
+  <tag>CPU_9351/P900_Global/HMI_SWL</tag>
+ </group>
+ <group Type="Auto">
+  <name>Maintenance_Extension@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_Cmd_Init_Extension</tag>
+  <tag>CPU_9351/P900_Global/HMI_Cmd_Init_Extension_SetBegin</tag>
+  <tag>CPU_9351/P900_Global/HMI_Cmd_Init_Extension_SetEnd</tag>
+  <tag>CPU_9351/P900_Global/HMI_Enable_Init_Extension</tag>
+  <tag>CPU_9351/P900_Global/HMI_ExtensionLength</tag>
+  <tag>CPU_9351/P900_Global/HMI_Init_Extension_Active</tag>
+ </group>
+ <group Type="Auto">
+  <name>Maintenance_Loadpin@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_ActualLoad</tag>
+ </group>
+ <group Type="Auto">
+  <name>Maintenance_Luffing@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_Cmd_Init_Luffing</tag>
+  <tag>CPU_9351/P900_Global/HMI_Enable_Init_Luffing</tag>
+  <tag>CPU_9351/P900_Global/HMI_Init_Luffing_Active</tag>
+  <tag>CPU_9351/P900_Global/HMI_LuffingAngle</tag>
+ </group>
+ <group Type="Auto">
+  <name>Maintenance_Overrides@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_Enable_Overrides</tag>
+  <tag>CPU_9351/P900_Global/HMI_EncodersHealthy_Disabled</tag>
+  <tag>CPU_9351/P900_Global/HMI_LoadpinHealthy_Disabled</tag>
+  <tag>CPU_9351/P900_Global/HMI_MovementLimits_Disabled</tag>
+  <tag>CPU_9351/P900_Global/HMI_OverloadLimits_Disabled</tag>
+ </group>
+ <group Type="Auto">
+  <name>Maintenance_Slewing@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_Cmd_Init_Slewing</tag>
+  <tag>CPU_9351/P900_Global/HMI_Enable_Init_Slewing</tag>
+  <tag>CPU_9351/P900_Global/HMI_Init_Slewing_Active</tag>
+  <tag>CPU_9351/P900_Global/HMI_SlewingAngle</tag>
+ </group>
+ <group Type="Auto">
+  <name>PDF240005A-SW@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_User</tag>
+  <tag>This Client User-Name</tag>
+ </group>
+ <group Type="Auto">
+  <name>Position@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_ExtensionLength</tag>
+  <tag>CPU_9351/P900_Global/HMI_LuffingAngle</tag>
+  <tag>CPU_9351/P900_Global/HMI_SlewingAngle</tag>
+ </group>
+ <group Type="Auto">
+  <name>Set_SystemTime@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Template@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>CPU_9351/P900_Global/HMI_Control_Mode</tag>
+  <tag>System Time</tag>
+  <tag>This Client User-Name</tag>
+ </group>
+</groups>

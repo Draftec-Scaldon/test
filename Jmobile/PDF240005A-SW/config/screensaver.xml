@@ -1,0 +1,9 @@
+<screenSaver>
+ <timeOut>60</timeOut>
+ <EnableScreenSaver>false</EnableScreenSaver>
+ <slideShow Enable="false">
+  <slideTimeout>5</slideTimeout>
+  <imageLocation>4</imageLocation>
+  <images/>
+ </slideShow>
+</screenSaver>

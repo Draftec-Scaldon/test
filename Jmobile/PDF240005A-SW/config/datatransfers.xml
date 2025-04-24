@@ -1,0 +1,11 @@
+<datatransfers ver="1.1" syncEnable="true">
+ <dt type="1" enable="true" sourceA="CPU_9351/P900_Global/HMI_Watchdog_From_PLC" sourceB="CPU_9351/P900_Global/HMI_Watchdog_To_PLC" lowLimit="0" name="data1" trigger="" syncOnInit="false" transferMode="0" r="0" direction="0" highLimit="0"/>
+ <opt>
+  <dtu tr="CPU_9351/P900_Global/HMI_Watchdog_From_PLC">
+   <dtp>
+    <t d="CPU_9351/P900_Global/HMI_Watchdog_To_PLC"/>
+   </dtp>
+  </dtu>
+ </opt>
+ <init/>
+</datatransfers>

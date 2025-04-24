@@ -1,0 +1,114 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" staticFile="opt/load.png" downloadPrepDone="true" templateFile="template.jmx" staticOptEnable="true" id="Load" dataWndSize="0,70" pageName="Load" pageSize="800,480" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="none" width="800" height="480" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads="" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="LOAD"/>
+    <MLText id="2" L1="Actual load"/>
+    <MLText id="3" L1="mT"/>
+    <MLText id="4" L1="SWL"/>
+    <MLText id="10" L1="m"/>
+    <MLText id="11" L1="mT"/>
+    <MLText id="16" L1="Outreach"/>
+    <MLText id="19" L1="LOADCHART DATA"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect19">
+   <wgtStyle x="15" y="120" cx="75" cy="27.50" width="150" height="55" forcePaint="1"/>
+   <object class="ButtonWgt" id="BtnRect19.btn" hmiStyle="type:btn">
+    <wgtStyle form="rectangle" pushColor="rgb(192,192,192)" stroke-width="2" dx="1" dy="-1" type="momentary" fill="rgb(192,192,192)" x="0" y="0" needleColor="rgb(255,255,255)" stroke="rgb(255,255,255)" height="55" downFillColor="rgb(190,190,190)" releasePath="images\win-like.svg" width="150" forcePaint="1" value="0" needlePath="images\win-like-press.svg"/>
+   </object>
+   <object class="LabelWgt" id="BtnRect19.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Load@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1.GroupWgt2">
+   <wgtStyle x="233" y="150" cx="250" cy="85.25" width="500" height="170.50"/>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.label2" static="true">
+    <wgtStyle font-family="Roboto" x="125" vert-align="middle" y="0" font-size="18" keypad-type="None" cx="125" alignment="center" marker="true" cy="11.84" font-sizepx="24" width="250" font-bold="true" wrapping="true" height="25" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+   <object class="LineWgt" id="GroupWgt1.GroupWgt2.line6" static="true">
+    <wgtStyle x="0" y="170" stroke-width="2" cx="129.38" cy="0" stroke="rgb(255,255,255)" width="500" height="0"/>
+   </object>
+   <object class="LineWgt" id="GroupWgt1.GroupWgt2.line1" static="true">
+    <wgtStyle x="0" anchorIdx="1" y="13" stroke-width="2" cx="0" cy="100" stroke="rgb(255,255,255)" width="0" height="157.50"/>
+   </object>
+   <object class="LineWgt" id="GroupWgt1.GroupWgt2.line2" static="true">
+    <wgtStyle x="0" y="13" stroke-width="2" cx="129.38" cy="0" stroke="rgb(255,255,255)" width="110" height="0"/>
+   </object>
+   <object class="LineWgt" id="GroupWgt1.GroupWgt2.line3" static="true">
+    <wgtStyle x="390" y="13" stroke-width="2" cx="129.38" cy="0" stroke="rgb(255,255,255)" width="110" height="0"/>
+   </object>
+   <object class="LineWgt" id="GroupWgt1.GroupWgt2.line4" static="true">
+    <wgtStyle x="500" anchorIdx="1" y="13" stroke-width="2" cx="0" cy="100" stroke="rgb(255,255,255)" width="0" height="157.50"/>
+   </object>
+   <object class="NumericWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.field2">
+    <wgtStyle frameColor="rgb(255,255,255)" form="Numeric" min="-3.40282e+38" timeSpec="local" font-size="18" step="1" cx="34.50" cy="11.25" decimalDigits="1" x="325" numberFormat="1" showThousandSeparator="false" y="91.50" font-sizepx="24" height="24" font-color="rgb(255,255,255)" width="74" alignment="right" max="3.40282e+38" vert-align="middle" forcePaint="8" usingFormat="" font-family="Roboto" text="100.0" value="100.0" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_SWL" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label1" static="true">
+    <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="425" vert-align="middle" y="91.50" font-size="18" keypad-type="None" cx="36" marker="true" cy="18" font-sizepx="24" width="59" wrapping="true" height="24" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label3" static="true">
+    <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="15" vert-align="middle" y="90" font-size="18" keypad-type="None" cx="100" marker="true" cy="13.26" font-sizepx="24" width="199" font-bold="true" wrapping="true" height="27" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+   <object class="NumericWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.field3">
+    <wgtStyle frameColor="rgb(255,255,255)" form="Numeric" min="-3.40282e+38" timeSpec="local" font-size="18" step="1" cx="34.50" cy="11.25" decimalDigits="1" x="325" numberFormat="1" showThousandSeparator="false" y="51.50" font-sizepx="24" height="24" font-color="rgb(255,255,255)" width="74" alignment="right" max="3.40282e+38" vert-align="middle" forcePaint="8" usingFormat="" font-family="Roboto" text="100.0" value="100.0" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_ActualLoad" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label6" static="true">
+    <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="425" vert-align="middle" y="51.50" font-size="18" keypad-type="None" cx="36" marker="true" cy="18" font-sizepx="24" width="59" wrapping="true" height="24" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label7" static="true">
+    <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="15" vert-align="middle" y="50" font-size="18" keypad-type="None" cx="100" marker="true" cy="13.26" font-sizepx="24" width="199" font-bold="true" wrapping="true" height="27" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="NumericWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.field1">
+    <wgtStyle frameColor="rgb(255,255,255)" form="Numeric" min="-3.40282e+38" timeSpec="local" font-size="18" step="1" cx="34.50" cy="11.25" decimalDigits="1" x="325" numberFormat="1" showThousandSeparator="false" y="131.50" font-sizepx="24" height="24" font-color="rgb(255,255,255)" width="74" alignment="right" max="3.40282e+38" vert-align="middle" forcePaint="8" usingFormat="" font-family="Roboto" text="100.0" value="100.0" keypad-type="Numeric"/>
+    <dataLinks>
+     <dataLink class="TagMgrWgt" tagType="float" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Outreach" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label4" static="true">
+    <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="425" vert-align="middle" y="131.50" font-size="18" keypad-type="None" cx="36" marker="true" cy="18" font-sizepx="24" width="59" wrapping="true" height="24" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="10"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt2.GroupWgt13.GroupWgt1.label5" static="true">
+    <wgtStyle font-family="Roboto" frameColor="rgb(255,255,255)" x="15" vert-align="middle" y="130" font-size="18" keypad-type="None" cx="100" marker="true" cy="13.26" font-sizepx="24" width="199" font-bold="true" wrapping="true" height="27" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="16"/>
+    </links>
+   </object>
+  </object>
+ </object>
+</wgtPage>

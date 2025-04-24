@@ -1,0 +1,71 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" pageName="SignatureDialog" px="0" py="0" usedFonts="Roboto,Roboto Medium,Roboto Light" dataWndSize="0,70" dynPosition="false" titlebar="false" titleName="" pageSize="400,390" blur-background="false" id="SignatureDialog" staticOptEnable="false" downloadPrepDone="false" staticFile="opt/signaturedialog.png" pageType="modal" blur-radius="5" singleInstance="true">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="0499004264" color="rgb(210,210,210)" width="400" height="390" forcePaint="512" v="04.99.00.4264"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="LabelWgt" id="id_title_lbl">
+   <wgtStyle frameColor="rgb(237,237,237)" font-size="16" cx="200.32" cy="17.04" x="0" y="0" font-sizepx="21" font-bold="true" height="35" font-color="rgb(76,76,77)" frameFill="rgb(237,237,237)" min-font-size="8" width="399" vert-align="middle" wrap-type="wordWrap" forcePaint="16" frame="true" wgtStaticOpt="dynamic" font-family="Roboto" text="Confirm your password" keypad-type="None" max-font-size="64"/>
+  </object>
+  <object class="LabelWgt" id="id_erromsg_lbl">
+   <wgtStyle frameColor="none" font-size="12" cx="190" cy="15.15" x="11" marker="true" y="298" font-sizepx="16" height="31" font-color="rgb(76,76,77)" min-font-size="8" width="379" vert-align="top" wrap-type="wordWrap" forcePaint="24" wgtStaticOpt="dynamic" font-family="Roboto" text="" keypad-type="None" max-font-size="64"/>
+   <dataLinks>
+    <dataLink sourceType="Widget" tag="errormsg" dataSource="_SignatureMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="id_password_lbl">
+   <wgtStyle font-size="12" cx="164" cy="11.37" x="7" y="56" font-sizepx="16" height="24" font-color="rgb(76,76,77)" min-font-size="8" width="328" vert-align="top" wrap-type="wordWrap" forcePaint="16" wgtStaticOpt="dynamic" font-family="Roboto" text="Password:" keypad-type="None" max-font-size="64"/>
+  </object>
+  <object class="LabelWgt" id="id_comment_lbl">
+   <wgtStyle font-size="12" cx="164" cy="11.37" x="7" y="144" font-sizepx="16" height="24" font-color="rgb(76,76,77)" min-font-size="8" width="328" vert-align="top" wrap-type="wordWrap" forcePaint="16" wgtStaticOpt="dynamic" font-family="Roboto" text="Comments:" keypad-type="None" max-font-size="64"/>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="Cancelbtn">
+   <wgtStyle x="160" y="348" cx="51" cy="18" width="102" height="36"/>
+   <object class="ButtonWgt" id="Cancelbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\btn_rect_grayup.svg" x="0" form="standard" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" cx="51" cy="18" value="0" style="0" width="102" height="36" fill="rgb(237,237,237)" downFillColor="rgb(0,176,199)" bdrImageSize="54.00,44.00"/>
+    <links>
+     <action class="CancelSignatureAction" actionID="0" event="onMouseUp" actionWgt="_SignatureMgr" attribute="onMouseRelease"/>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseUp" actionWgt="_PageMgr" pageName="" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="Cancelbtn.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-size="10" wrapping="true" cx="45.33" cy="16.37" x="3.77" y="0.82" font-sizepx="13" height="33.55" font-color="rgb(76,76,77)" min-font-size="8" width="90.67" alignment="center" vert-align="middle" wrap-type="wordWrap" forcePaint="1" font-family="Roboto Medium" text="CANCEL" keypad-type="None" max-font-size="64"/>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="ButtonsWithLabel" id="Okbtn">
+   <wgtStyle x="270" y="348" cx="61" cy="18" width="122" height="36"/>
+   <object class="ButtonWgt" id="Okbtn.btn" hmiStyle="hmi-name:smooth; hmi-shape:rect; hmi-type:btn; type:btn">
+    <wgtStyle type="momentary" releasePath="images\btn_rect_grayup.svg" x="0" form="standard" pushColor="rgb(128,128,0)" needlePath="images\Btn_rect_Dwn.svg" y="0" bdrSize="0.17,0.17,0.15,0.16" cx="61" cy="18" value="0" style="0" width="122" height="36" fill="rgb(237,237,237)" downFillColor="rgb(0,176,199)" bdrImageSize="54.00,44.00"/>
+    <links>
+     <action class="ApplySignatureAction" actionID="0" event="onMouseUp" actionWgt="_SignatureMgr" attribute="onMouseRelease"/>
+     <action class="CloseDialogAction" actionID="1" closeParam="Selected" event="onMouseUp" actionWgt="_PageMgr" pageName="" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="Okbtn.lbl" hmiStyle="hmi-type:wgtlabel">
+    <wgtStyle font-size="10" wrapping="true" cx="54.22" cy="16.37" x="4.51" y="0.82" font-sizepx="13" height="33.55" font-color="rgb(76,76,77)" min-font-size="8" width="108.45" alignment="center" vert-align="middle" wrap-type="wordWrap" forcePaint="1" font-family="Roboto Medium" text="OK" keypad-type="None" max-font-size="64"/>
+   </object>
+  </object>
+  <object class="NumericWgt" id="id_password">
+   <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" masked="true" timeSpec="local" font-size="12" step="1" cx="173.63" cy="17.14" x="7" numberFormat="0" showThousandSeparator="false" y="82" font-sizepx="16" font-bold="true" height="39" font-color="rgb(76,76,77)" frameFill="rgb(255,255,255)" readWrite="true" min-font-size="8" width="384" max="32767" vert-align="middle" wrap-type="wordWrap" forcePaint="8" usingFormat="" frame="true" font-family="Roboto Light" text="" value="" keypad-type="Alphabet" max-font-size="64"/>
+   <dataLinks>
+    <dataLink sourceType="Widget" tag="password" dataSource="_SignatureMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="id_comment">
+   <wgtStyle frameColor="rgb(200,200,200)" form="Numeric" min="-32768" timeSpec="local" font-size="12" wrapping="true" step="1" cx="173.63" cy="51.43" x="8" numberFormat="0" showThousandSeparator="false" y="170" font-sizepx="16" font-bold="true" height="119" font-color="rgb(76,76,77)" frameFill="rgb(255,255,255)" readWrite="true" min-font-size="8" width="384" max="32767" vert-align="top" wrap-type="wordWrap" forcePaint="8" usingFormat="" frame="true" font-family="Roboto Light" text="" value="" keypad-type="Alphabet" max-font-size="64"/>
+   <dataLinks>
+    <dataLink sourceType="Widget" tag="comment" dataSource="_SignatureMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="value"/>
+    <dataLink sourceType="Widget" tag="disablecomment" dataSource="_SignatureMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="disabled"/>
+    <dataLink sourceType="Widget" tag="disablecomment" dataSource="_SignatureMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="frameFill">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ffffff;#efefef" name="ColorPaletteCustom"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,272 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="TemplatePageWgt" downloadPrepDone="true" staticOptEnable="true" id="Template" pageType="template" dataWndSize="0,70" pageName="Template" pageSize="800,480" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" color="rgb(100,104,107)" width="800" height="480" v="04.05.01.523"/>
+  <object class="GroupWgt" customType="Alarms List" id="ActvAlrmAck1">
+   <wgtStyle x="276" y="0" cx="162" cy="49.50" width="324" height="99"/>
+   <object class="TableWgt" id="ActvAlrmAck1.tbl">
+    <wgtStyle font-size="13" hdrfgColor="rgb(255,255,255)" cx="16.46" cy="2.85" x="0" y="0" filterString="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)" font-sizepx="17" font-bold="true" height="99" datafont-sizepx="15" hdrbgColor="none" frameType="0" fgColor="rgb(255,255,255)" width="324" scrollHeight="25" datafont-size="11" scroll_type="1" forcePaint="8" showHeader="false" font-family="Roboto" tableBGColor="rgb(100,104,107)" bgColor="rgb(100,104,107)" filterCol="4"/>
+    <dataLinks>
+     <dataLink sourceType="Data" tag="alarmCount" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R" attribute="rowCount"/>
+     <dataLink sourceType="Widget" tag="FGColor" dataSource="_AlarmsMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="fgColor">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ffffff;#efefef" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+     <dataLink sourceType="Widget" tag="BGColor" dataSource="_AlarmsMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="bgColor">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#64686b;#efefef" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+     <dataLink sourceType="Widget" tag="alSelect" dataSource="_AlarmsMgr" tagIndex="-1" widgetType="Project" readWrite="R/W" attribute="selectionAttr"/>
+    </dataLinks>
+    <table cols="10" rows="0">
+     <colInfo>
+      <col type="2" sizeToFit="false" name="Select" visibility="false" stringList="" width="50">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="27"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Data" tag="alSelect" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R/W" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="0" sizeToFit="false" name="Name" visibility="false" stringList="" width="80">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="26"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Widget" tag="alName" dataSource="_AlarmsMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="0" sizeToFit="false" name="Groups" visibility="false" stringList="" width="100">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="23"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Widget" tag="alGroups" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="4" numberformat="DD/MM/YYYY - hh:mm:ss" sizeToFit="false" name="Time" visibility="false" stringList="" width="185">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="20"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Data" tag="alDateTime" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="0" sizeToFit="false" name="State" visibility="false" stringList="" width="120">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="22"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Data" tag="alState" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="0" sizeToFit="false" name="Value" visibility="false" stringList="" width="90">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="21"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Data" tag="alValue" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="0" sizeToFit="false" name="Description" visibility="true" stringList="" width="324">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="30"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Data" tag="alDescription" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="0" sizeToFit="false" name="Severity" visibility="false" stringList="" width="80">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="31"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Data" tag="alSeverity" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R/W" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="2" sizeToFit="false" name="Enable" visibility="false" stringList="" width="45">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="29"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Data" tag="alEnable" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R/W" attribute="value"/>
+       </dataLinks>
+      </col>
+      <col type="5" imagePath="images/action.png" sizeToFit="false" name="Action" visibility="false" stringList="" width="100">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="28"/>
+       </links>
+       <dataLinks>
+        <dataLink sourceType="Widget" tag="alUserAction" dataSource="_AlarmsMgr" widgetType="Project" readWrite="R/W" attribute="value"/>
+       </dataLinks>
+      </col>
+     </colInfo>
+    </table>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_TemplatePageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads="" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="NO SELECTION"/>
+    <MLText id="3" L1="LOCAL CONTROL"/>
+    <MLText id="2" L1="REMOTE CONTROL"/>
+    <MLText id="20" L1="Time"/>
+    <MLText id="21" L1="Value"/>
+    <MLText id="22" L1="State"/>
+    <MLText id="23" L1="Groups"/>
+    <MLText id="26" L1="Name"/>
+    <MLText id="27" L1="Select"/>
+    <MLText id="28" L1="Action"/>
+    <MLText id="29" L1="Enable"/>
+    <MLText id="30" L1="Description"/>
+    <MLText id="31" L1="Severity"/>
+    <MLText id="32" L1="LOAD"/>
+    <MLText id="33" L1="POSITION"/>
+    <MLText id="34" L1="MAINT"/>
+    <MLText id="35" L1="ALARMS"/>
+    <MLText id="58" L1="Label"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle imagePath="images/Scaldon_Logo.bmp" x="-1" y="-1" cx="138" cy="50" stroke="rgb(200,200,200)" width="276" height="100" fill="rgb(230,230,230)"/>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect3">
+   <wgtStyle x="15" lock="true" y="120" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect3.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="load.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect3.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="32"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect4">
+   <wgtStyle x="15" lock="true" y="190" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect4.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="position.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect4.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="33"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect5">
+   <wgtStyle x="15" lock="true" y="260" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect5.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="alarms.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect5.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="35"/>
+    </links>
+   </object>
+  </object>
+  <object class="LineWgt" id="line">
+   <wgtStyle x="0" lock="true" y="100" stroke-width="2" cx="685" cy="0" stroke="rgb(255,255,255)" width="798" height="0" forcePaint="1"/>
+  </object>
+  <object class="ButtonWgt" id="hotspotbtn1" hmiStyle="type:btn">
+   <wgtStyle form="hotspot" pushColor="rgb(128,128,0)" dx="1" dy="-1" type="momentary" fill="rgb(160,160,164)" cx="135.88" cy="49.02" x="0" y="0" lock="true" height="100" downFillColor="rgb(160,160,164)" releasePath="../../shared/gallery/images/bu_other/win-like.svg" width="276" forcePaint="1" value="0" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg"/>
+   <links>
+    <action class="HomePageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" attribute="onMouseRelease"/>
+   </links>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="BtnRect1">
+   <wgtStyle x="15" lock="true" y="330" cx="75" cy="27.50" width="150" height="55"/>
+   <object class="ButtonWgt" id="BtnRect1.btn" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images\win-like.svg" x="0" form="rectangle" pushColor="rgb(100,104,107)" needlePath="images\win-like-press.svg" y="0" needleColor="rgb(255,255,255)" stroke-width="2" dx="1" dy="-1" value="0" stroke="rgb(255,255,255)" width="150" height="55" fill="rgb(100,104,107)" downFillColor="rgb(190,190,190)"/>
+    <links>
+     <action class="LoadPageAction" actionID="0" event="onMouseUp" actionWgt="_PageMgr" pageName="maintenance_luffing.jmx" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect1.txt">
+    <wgtStyle font-family="Roboto" x="5.77" vert-align="middle" y="18.70" font-size="16" keypad-type="None" cx="69.23" alignment="center" cy="8.80" font-sizepx="21" width="138.46" font-bold="true" wrapping="true" height="17.60" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="34"/>
+    </links>
+   </object>
+  </object>
+  <object class="ButtonWgt" id="GroupWgt1.hotspotbtn1" hmiStyle="type:btn">
+   <wgtStyle form="hotspot" pushColor="rgb(128,128,0)" dx="1" dy="-1" type="maintained" fill="rgb(160,160,164)" cx="98.46" cy="24.51" x="600" y="50" lock="true" height="50" downFillColor="rgb(160,160,164)" releasePath="../../shared/gallery/images/bu_other/win-like.svg" width="200" forcePaint="1" value="0" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg"/>
+   <links>
+    <action class="SwitchUserAction" actionID="0" event="onMouseClick" actionWgt="_UserMgr" attribute="onMouseClick"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle font-family="Roboto" x="657" lock="true" vert-align="middle" y="67" font-size="12" keypad-type="None" cx="57" alignment="center" marker="true" cy="7.58" font-sizepx="16" width="114" wrapping="true" height="16" forcePaint="9" font-color="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" tagType="string" sourceType="System" tag="This Client User-Name" dataSource="_SysPropMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="text"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="58"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="GroupWgt1.image1">
+   <wgtStyle imagePath="images/Login.svg" x="611" lock="true" y="54" stroke-width="1" cx="15" cy="20" stroke="none" width="30" height="40" fill="rgb(255,255,255)" forcePaint="1"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.Date">
+   <wgtStyle form="date-time" min="0" timeSpec="local" font-size="12" step="1" cx="46.71" cy="11" x="605" numberFormat="0" showThousandSeparator="false" y="15" lock="true" font-sizepx="16" height="22" font-color="rgb(255,255,255)" width="100" alignment="center" max="4096" vert-align="middle" forcePaint="8" usingFormat="DD-MM-YYYY" font-family="Roboto" text="-1" value="-1" keypad-type="None"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" sourceType="System" tag="System Time" dataSource="_SysPropMgr" widgetType="Project" readWrite="R" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.Time">
+   <wgtStyle form="date-time" min="0" timeSpec="local" font-size="12" step="1" cx="37.37" cy="11" x="715" numberFormat="0" showThousandSeparator="false" y="15" lock="true" font-sizepx="16" height="22" font-color="rgb(255,255,255)" width="80" alignment="center" max="4096" vert-align="middle" forcePaint="8" usingFormat="hh:mm:ss" font-family="Roboto" text="-1" value="-1" keypad-type="None"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" sourceType="System" tag="System Time" dataSource="_SysPropMgr" widgetType="Project" readWrite="R" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="Template@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+  <object class="ButtonWgt" id="hotspotbtn2" hmiStyle="type:btn">
+   <wgtStyle type="momentary" releasePath="../../shared/gallery/images/bu_other/win-like.svg" x="276" form="hotspot" pushColor="rgb(128,128,0)" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" y="0" dx="1" dy="-1" cx="159.51" cy="48.53" value="0" width="324" height="99" fill="rgb(160,160,164)" forcePaint="1" downFillColor="rgb(160,160,164)"/>
+   <links>
+    <action class="LoadPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="alarms.jmx" attribute="onMouseRelease"/>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle min="0" font-size="12" wrapping="true" cx="65.92" cy="21.31" x="15" marker="true" y="435" font-sizepx="16" font-bold="true" height="45" font-color="rgb(255,255,255)" width="150" alignment="center" max="2" continous="true" vert-align="middle" forcePaint="8" viewindex="false" font-family="Roboto" text="" value="1" keypad-type="None">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink class="TagMgrWgt" tagType="short" sourceType="Tag" tag="CPU_9351/P900_Global/HMI_Control_Mode" dataSource="_TagMgr" tagIndex="-1" widgetType="Project" readWrite="R" attribute="value"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Roboto"/>
+     <textid idx="0" val="0"/>
+     <textid idx="1" val="3"/>
+     <textid idx="2" val="2"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ButtonWgt" id="GroupWgt1.hotspotbtn2" hmiStyle="type:btn">
+   <wgtStyle form="hotspot" pushColor="rgb(128,128,0)" dx="1" dy="-1" type="maintained" fill="rgb(160,160,164)" cx="98.46" cy="24.51" x="600" y="0" lock="true" height="50" downFillColor="rgb(160,160,164)" releasePath="../../shared/gallery/images/bu_other/win-like.svg" width="200" forcePaint="65" value="0" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg"/>
+   <links>
+    <action class="ShowDialogAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" pageName="set_systemtime.jmx" attribute="onMouseRelease"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

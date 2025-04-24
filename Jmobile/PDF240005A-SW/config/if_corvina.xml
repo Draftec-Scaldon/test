@@ -1,0 +1,10 @@
+<corvinaif>
+ <enableserver>false</enableserver>
+ <enablealarm>false</enablealarm>
+ <tagGroups>All</tagGroups>
+ <alarmGroups>All</alarmGroups>
+ <corvina>
+  <maxDbSize>10485760</maxDbSize>
+  <maxCachedMessages>10000</maxCachedMessages>
+ </corvina>
+</corvinaif>

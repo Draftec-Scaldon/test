@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="jm-html">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" type="image/x-icon" href="images/hmistudio.ico"/>
+		<link rel="apple-touch-icon" href="images/hmistudio.ico" />
+		<title>PDF240005A-SW</title>
+       	<link rel="stylesheet" href="css/lib.min.css">
+		<link rel="stylesheet" href="css/core.min.css">
+		<link type="text/css" rel="stylesheet" href="css/pages/commons.css">
+		 
+		<style id="cssBlock" type="text/css" media="screen">
+			 
+		</style>
+	</head>
+	<body class="jm-body">
+		<div class="jm-status-bar" data-role="status-bar" style="position:absolute;display:none">
+			<div class="jm-connstatus jm-active"></div>
+		</div>
+		<div id="jm-container">
+			<div id="hmi-templates"></div>
+			<!-- We need to load the broken image initially itself so that it can be loaded correctly
+			when the connection is severed -->
+			<div class="jm-broken jm-hidden"></div>
+			<!-- script section starts -->
+            <script type="text/javascript" >
+                if ( !window.EventSource ) {
+                    var body = document.getElementsByTagName( "body" )[0];
+                    var script = document.createElement( "script" );
+                    script.type = "text/javascript";
+                    script.src = "js/eventsource.min.js";
+                    body.appendChild( script );
+                }
+            </script>
+			<script type="text/javascript" src="js/hmi.libs.min.js" ></script>
+			<script type="text/javascript" src="js/hmi.combined.min.js" ></script>	
+			<script type="text/javascript" src="js/page.combined.js" ></script>	
+			<script type="text/javascript" src="js/loadProject.js" ></script>
+			<script type="text/javascript">
+				/**
+				 * The code that executes when the page loads for the first time
+				 */
+				$(function() {
+					var req = $hmi.parseRequest(); 
+
+					// Add global user ref
+					if( req.usr ) {
+						$hmi.urlParameters.usr = req.usr;
+					}
+					if( req.g ) {
+						$hmi.urlParameters.g = req.g;
+					}
+					if( req.ot ) {
+						$hmi.urlParameters.ot = req.ot;
+					}
+
+					// Resetting the viewport if necessary
+					$hmi.resetViewport();
+					//Attaching the pageshow event through which we handle all processing meant for page load actions
+                    $hmi.attachPageEvents();
+					// Overwrite main page if loadPage is defined
+					var loadPage = null;
+					var forceLoad = false;
+                    if ( req.loadPage ) {
+                        loadPage = req.loadPage;
+						forceLoad = true;
+                    }
+
+					// UM changepassword form
+					var loginInfo = null;
+					if( req.chpswd ) {
+						$hmi.enablePjctWidgetServerReq = true;
+						$hmi.urlParameters.code = parseInt( req.chpswd );
+
+						/**
+						 * Note: After #12774 runtime fix message of pswd expiration not include number of days remanining
+
+						if( req.exDur && req.exDays ) {
+							var exDur = parseInt( req.exDur );
+							var exDays = parseInt( req.exDays );
+
+							loginInfo = {
+								exDur: exDur,
+								exDays: exDays
+							};
+						} */
+
+						loadPage = "changepassword";
+						forceLoad = false;
+					}
+
+					var loginInfo = null;
+					if ( req.cID !== undefined ) {
+						loginInfo = {
+							cID: req.cID
+						};
+					}
+
+					// Start the widget engine
+                    $hmi.initWidgetEngine( loadPage, loginInfo, forceLoad );
+				});
+			</script>
+		</div>
+		<div id="jm-hmi-dtpop"></div>
+		<div  id="jm_loading_" class="jm-load_p">
+			<div class="slider">
+				<div class="line"></div>
+				<div class="subline inc"></div>
+				<div class="subline dec"></div>
+			</div>
+		</div>
+		<div id="jm-spinnerbox">
+			<div class="jm-spinner"></div>
+		</div>
+		<div id="jm-layer-messages"></div>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<opcuaserver>
+ <enableserver>false</enableserver>
+ <enablealarm>false</enablealarm>
+ <enablehistoricalarm>false</enablehistoricalarm>
+ <enabletrend>false</enabletrend>
+ <tagGroups>None</tagGroups>
+ <alarmGroups>None</alarmGroups>
+ <signature>363432cea74ee5ac0215b05579f9130d</signature>
+ <enableCustom>false</enableCustom>
+ <customItems/>
+</opcuaserver>

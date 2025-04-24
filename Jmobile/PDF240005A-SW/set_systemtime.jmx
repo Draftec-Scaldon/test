@@ -1,0 +1,48 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="DialogWgt" staticFile="opt/set_systemtime.png" downloadPrepDone="true" dynPosition="true" titlebar="false" singleInstance="true" staticOptEnable="true" titleName="" px="232" id="Set_SystemTime" py="150" dataWndSize="0,70" pageType="modal" pageName="Set_SystemTime" pageSize="502,300" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" mtx="1,0,0,0,1,0,0,0,1" fitToSize="1" ver="040501523" color="rgb(100,104,107)" width="502" height="300" v="04.05.01.523"/>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle x="-1" y="-1" mtx="1,0,0,0,1,0,0,0,1" stroke-width="3" cx="253.25" cy="151.60" stroke="rgb(255,255,255)" width="504" height="302" fill="none" nodeName="rect"/>
+  </object>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads="" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="0" L1="Close"/>
+    <MLText id="1" L1="System time"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" customType="Shape Button" id="GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2">
+   <wgtStyle x="307.50" y="230" cx="75" cy="25" width="150" height="50"/>
+   <object class="ButtonWgt" id="GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.btn" hmiStyle="type:btn">
+    <wgtStyle form="rectangle" pushColor="rgb(192,192,192)" stroke-width="2" dx="1" dy="-1" type="momentary" fill="rgb(100,104,107)" x="0" y="0" needleColor="rgb(255,255,255)" stroke="rgb(255,255,255)" height="50" downFillColor="rgb(100,104,107)" releasePath="images\win-like.svg" holdTime="1000" width="148.65" value="0" needlePath="images\win-like-press.svg"/>
+    <links>
+     <action class="CloseDialogAction" actionID="2" closeParam="Selected" event="onMouseUp" actionWgt="_PageMgr" pageName="" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.txt">
+    <wgtStyle font-family="Roboto" x="0.68" vert-align="middle" y="0" font-size="15" keypad-type="None" cx="76.65" alignment="center" cy="26" font-sizepx="20" width="149.33" font-bold="true" wrapping="true" height="50" forcePaint="1" font-color="rgb(255,255,255)"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt1.label4" static="true">
+   <wgtStyle font-family="Roboto" x="42.50" vert-align="top" y="20" font-size="15" keypad-type="None" cx="160" marker="true" cy="11.85" font-sizepx="20" width="320" font-bold="true" wrapping="true" height="25" font-color="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="DateTimeWgt" id="dateTime2">
+   <wgtStyle timeSpec="local" buttonWidth="75" font-size="22" buttonBackGroundDownColor="rgb(192,192,192)" type="1" cx="186.19" cy="45" x="42.50" buttonBorderWidth="2" y="95" buttonImageWidth="30" buttonImageHeight="30" font-sizepx="29" height="90" font-color="rgb(255,255,255)" width="415" buttonBorderColor="rgb(255,255,255)" vert-align="top" buttonBackGroundUpColor="rgb(100,104,107)" usingFormat="dd/MM/yyyy - hh:mm:ss" forcePaint="8" borderWidth="2" font-family="Roboto" value="1622173784" text="1622173784" keypad-type="None" backgroundColor="rgb(100,104,107)" borderColor="rgb(255,255,255)"/>
+   <dataLinks>
+    <dataLink class="SysPropMgrWgt" sourceType="System" tag="System Time" dataSource="_SysPropMgr" widgetType="Project" readWrite="R/W" attribute="value"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="Set_SystemTime@$GroupSubscrWgt@$0">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

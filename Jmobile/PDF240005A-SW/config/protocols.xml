@@ -1,0 +1,20 @@
+<protocols>
+ <protocol>
+  <id>prot1</id>
+  <name>BEAD</name>
+  <file>BEAD</file>
+  <configuration>CfgVer=1 prefix=CPU_9351 panelAMSNetID=10.0.0.10.1.1 panelAMSPort=32844 ipAddress=10.0.0.1 port=48898 plcAMSNetID=5.147.146.83.1.1 plcAMSPort=851 timeout=3000. model=2 </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>true</enableDatagram>
+  <offline_ort>30000</offline_ort>
+  <offline_opt>false</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false">[Beckhoff ADS prot1] PDF240005A-SW</dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>Beckhoff ADS</displayName>
+  <clientSide>false</clientSide>
+  <remoteOnly>false</remoteOnly>
+ </protocol>
+</protocols>

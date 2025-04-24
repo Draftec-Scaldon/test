@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<div id="hmi-templates"></div>
+		<div id="_d1_page8" data-role="hmi-dialog">
+			<div data-role="dialog-content" id="d1_page8_content">
+				<div id="d1_page8" style="width:502px;height:300px;overflow:hidden;background-color:rgb(100,104,107);background-image:url('../images/7365745f73797374656d74696d65.png');background-size:contain;background-repeat:no-repeat;" class="jm-wgt" data-widget="DialogWgt" titlename="Set_SystemTime" px="232" py="150">
+<div id="d1_wgt416" data-sid="rect2" style="width:504px;height:302px;left:-1px;top:-1px;" class="jm-wgt" data-cx="253.25" data-cy="151.6" data-widget="ShapeWgt">
+</div><div id="d1_wgt417" data-sid="_PageMLTextMgrWgt" style="width:0px;height:0px;" class="jm-wgt" data-widget="PageMLTextMgrWgt">
+</div><div id="d1_wgt418" data-sid="GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2" style="width:150px;height:50px;left:308px;top:230px;" class="jm-wgt jm-grp" data-cx="75" data-cy="25" data-ctype="Shape Button" data-widget="GroupWgt">
+<div id="d1_wgt419" data-sid="GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.btn" style="width:149px;width:145.65px;height:47px;background:rgb(100,104,107);border:2px solid rgb(255,255,255);" class="jm-wgt" data-widget="ButtonWgt">
+</div><div id="d1_wgt420" data-sid="GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.txt" style="width:149px;height:50px;left:1px;background-color:none;border:none;overflow:hidden;font-family:'Roboto';font-size:20px;font-weight:bold;font-style:normal;color:rgb(255,255,255);" class="jm-wgt jm-align-middle jm-align-center" data-cx="76.65" data-cy="26" data-widget="LabelWgt">
+<span data-textid="0" class="jm-text"><p style="white-space:pre-wrap;word-break:break-word;">Close</p></span></div></div><div id="d1_wgt421" data-sid="GroupWgt1.GroupWgt1.label4" style="width:320px;height:25px;left:43px;top:20px;" class="jm-wgt" data-cx="160" data-cy="11.85" data-widget="LabelWgt">
+</div><div id="Set_SystemTime@$GroupSubscrWgt@$0" data-sid="Set_SystemTime@$GroupSubscrWgt@$0" style="width:0px;height:0px;" class="jm-wgt" data-widget="GroupSubscribeWgt">
+</div></div>
+			</div>
+			<!-- script section starts -->
+			<script id="hmi-page" type="text/javascript">
+				$hmi.addPageInitFunction("_d1_page8", function(stage){
+var d1_page8=new $hmi.defs.hmiDialog({"wgtId":"d1_page8"},"Set_SystemTime",{"prefix":"d1","width":502,"height":300,"isMl":true,"fitsize":1,"fonts":[],"exportedLang":"L1","pageColor":"rgb(100,104,107)","templatePageColor":"none","titlebar":false,"dynPos":true,"dialogType":0,"title":"Set_SystemTime"},stage);
+$hmi.hmiSubscribeGroup("Set_SystemTime@$GroupSubscrWgt@$0",d1_page8,stage);
+var d1_wgt418=new $hmi.defs.hmiGroup({"wgtId":"d1_wgt418"},"GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2",{"cx":75,"cy":25,"left":307.5,"top":230,"width":150,"height":50,"isMl":true,"bR":[307.5,230,150,50],"datalinks":[],"ctype":"Shape Button"},d1_page8,d1_page8),
+d1_wgt419=new $hmi.defs.hmiButton({"wgtId":"d1_wgt419"},"GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.btn",{"left":0,"top":0,"width":148.65,"height":50,"hT":1000,"bR":[0,0,148.65,50],"datalinks":[],"form":"rectangle","toggle":0,"isRaster":false,"upFill":"rgb(100,104,107)","dwnFill":"rgb(192,192,192)","upStroke":"rgb(255,255,255)","dwnStroke":"rgb(255,255,255)","strokeWidth":2,"dx":1,"dy":-1,"s3D":true},d1_page8,d1_wgt418),
+d1_act51= new $hmi.actionMgr.defs.hmiActionCloseDialog({"wgtId":"d1_act51"},"onMouseRelease",{"t":0,"c":"CloseDialog","p":{"pg":".*","actID":2}},d1_page8,d1_wgt419),
+d1_wgt420=new $hmi.defs.hmiLabel({"wgtId":"d1_wgt420"},"GroupWgt1.GroupWgt4.GroupWgt1.GroupWgt2.GroupWgt1.GroupWgt12.BtnRect2.txt",{"cx":76.65,"cy":26,"left":0.68,"top":0,"width":149.33,"height":50,"isMl":true,"bR":[0.68,0,149.33,50],"datalinks":[],"text":"Close","mlIds":[0],"wrapping":true,"liveTags":false,"frame":false,"frameSize":1,"frameColor":"#000","frameFill":"transparent","fontBold":true,"fontColor":"rgb(255,255,255)","fontFamily":"Roboto","fontSize":20,"fontStyle":"normal","fontUnderline":false,"align":"center","valign":"middle"},d1_page8,d1_wgt418);var d1_wgt417=new $hmi.defs.hmiPageMLTextMgr({"wgtId":"d1_wgt417"},"_PageMLTextMgrWgt",{"texts":{"0":{"L1":"Close"},"1":{"L1":"System time"}},"curLangId":"L1"},d1_page8,d1_page8);return d1_page8;})
+			</script>
+		</div>
+		<script id="hmi-init" type="text/javascript"></script>
+	</body>
+</html>

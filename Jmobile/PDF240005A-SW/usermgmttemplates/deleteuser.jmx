@@ -1,0 +1,129 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="PageWgt" staticFile="opt/deleteuser.png" downloadPrepDone="false" staticOptEnable="false" id="DeleteUser" dataWndSize="0,70" pageName="DeleteUser" pageSize="480,480" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="040501523" width="480" height="480" v="04.05.01.523"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads="" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText id="1" L1=""/>
+    <MLText id="2" L1="Error : Connection lost with the Runtime. Please verify the Runtime status"/>
+    <MLText id="3" L1="Error : The username or password you entered is incorrect"/>
+    <MLText id="4" L1="Error : The password entered is incorrect"/>
+    <MLText id="5" L1="Error : Action cannot be executed"/>
+    <MLText id="6" L1="Error : Passwords do not match"/>
+    <MLText id="7" L1="Error: Password length too short"/>
+    <MLText id="8" L1="Error: Password must contain numbers"/>
+    <MLText id="9" L1="Error: Password must contain special characters"/>
+    <MLText id="10" L1="Error: Password must be different than previous passwords"/>
+    <MLText id="11" L1="Error : User already exist"/>
+    <MLText id="12" L1="Error:Password cannot be empty"/>
+    <MLText id="13" L1="Error: Your password has expired"/>
+    <MLText id="14" L1="Warning: Your password will expire soon"/>
+    <MLText id="15" L1="Error : You are not authorized. Please contact administrator"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="image2">
+   <wgtStyle imagePath="images/bgDeleteUser.svg" x="0" y="0" cx="246.57" cy="232.32" width="480" height="480"/>
+  </object>
+  <object class="GroupWgt" customType="Button" id="GroupWgt5">
+   <wgtStyle x="149" y="252" cx="48" cy="19" width="102" height="40"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image8">
+    <wgtStyle imagePath="images/ButtonFrame.svg" x="0" y="0" cx="46" cy="18" width="102" height="40"/>
+   </object>
+   <object class="ButtonWgt" id="btnStd3" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images/Button.svg" x="3.34" form="standard" needlePath="images/ButtonPressed.svg" y="3.67" dx="1" dy="-1" cx="47.29" cy="15" value="0" width="96" height="33" fill="rgb(211,211,211)" downFillColor="rgb(211,211,211)"/>
+    <links>
+     <action class="ApplyEditAction" actionID="0" applyType="2" event="onMouseUp" actionWgt="_UserMgr" attribute="onMouseRelease"/>
+     <action class="LastVisitedPageAction" actionID="1" event="onMouseUp" actionWgt="_PageMgr" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label3">
+    <wgtStyle font-family="Roboto" x="27.39" vert-align="middle" y="8.78" font-size="12" keypad-type="None" cx="24" alignment="center" cy="10" width="50" height="22" text="Delete" forcePaint="1" font-color="rgb(40,40,40)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" customType="Button" id="GroupWgt3">
+   <wgtStyle x="279" y="252" cx="48" cy="19" width="102" height="40"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" id="image4">
+    <wgtStyle imagePath="images/ButtonFrame.svg" x="0" y="0" cx="46" cy="18" width="102" height="40"/>
+   </object>
+   <object class="ButtonWgt" id="btnStd4" hmiStyle="type:btn">
+    <wgtStyle type="momentary" releasePath="images/Button.svg" x="3.01" form="standard" needlePath="images/ButtonPressed.svg" y="3.67" dx="1" dy="-1" cx="47.45" cy="15.30" value="0" width="96" height="33" fill="rgb(211,211,211)" downFillColor="rgb(211,211,211)"/>
+    <links>
+     <action class="LastVisitedPageAction" actionID="0" event="onMouseUp" actionWgt="_PageMgr" attribute="onMouseRelease"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label14">
+    <wgtStyle font-family="Roboto" x="27.09" vert-align="middle" y="8.78" font-size="12" keypad-type="None" cx="24" alignment="center" cy="10" width="50" height="22" text="Cancel" forcePaint="1" font-color="rgb(40,40,40)"/>
+   </object>
+  </object>
+  <object class="ComboBoxWgt" id="group_cmb">
+   <wgtStyle font-size="12" dropdownBorderColor="rgb(0,0,0)" cx="19.62" cy="14.57" x="211" y="185" dropdownButtonImageWidth="10" dropdownButtonWidth="30" height="34" width="170" continous="true" vert-align="top" dropdownButtonImageHeight="10" forcePaint="8" font-family="Roboto" text="" keypad-type="None" index="0"/>
+   <dataLinks>
+    <dataLink sourceType="Data" tag="groupNameList" dataSource="_UserGroupMgr" widgetType="Project" readWrite="R" attribute="list"/>
+    <dataLink sourceType="Data" tag="editUserGroup" dataSource="_UserMgr" widgetType="Project" readWrite="R/W" attribute="index"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="users_cmb">
+   <wgtStyle font-size="12" dropdownBorderColor="rgb(0,0,0)" cx="22.06" cy="15.79" x="211" y="136" dropdownButtonImageWidth="10" dropdownButtonWidth="30" height="34" width="170" continous="true" vert-align="top" dropdownButtonImageHeight="10" forcePaint="8" font-family="Roboto" text="" keypad-type="None" index="0"/>
+   <dataLinks>
+    <dataLink sourceType="Data" tag="editUserList" dataSource="_UserMgr" widgetType="Project" readWrite="R" attribute="list"/>
+    <dataLink sourceType="Data" tag="editCurUser" dataSource="_UserMgr" widgetType="Project" readWrite="R/W" attribute="index"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle font-family="Roboto" x="93" vert-align="top" y="146" font-size="12" keypad-type="None" cx="34" marker="true" cy="9" width="82" height="19" text="User name:" font-color="rgb(40,40,40)"/>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle font-family="Roboto" x="125" vert-align="top" y="193" font-size="12" keypad-type="None" cx="25" marker="true" cy="10" width="50" height="19" text="Group:" font-color="rgb(40,40,40)"/>
+  </object>
+  <object class="MsgTextWgt" id="error_msg">
+   <wgtStyle min="0" font-size="12" wrapping="true" cx="128.29" cy="48.32" x="35" marker="true" y="334.61" font-sizepx="16" height="102" font-color="rgb(255,0,0)" width="261" max="3" continous="false" vert-align="top" viewindex="false" font-family="Roboto" value="0" text="" keypad-type="None">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+     <msg index="4"/>
+     <msg index="5"/>
+     <msg index="6"/>
+     <msg index="7"/>
+     <msg index="8"/>
+     <msg index="9"/>
+     <msg index="10"/>
+     <msg index="11"/>
+     <msg index="12"/>
+     <msg index="13"/>
+     <msg index="14"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Roboto"/>
+     <textid idx="0" val="1"/>
+     <textid idx="1" val="15"/>
+     <textid idx="2" val="2"/>
+     <textid idx="3" val="3"/>
+     <textid idx="4" val="4"/>
+     <textid idx="5" val="5"/>
+     <textid idx="6" val="6"/>
+     <textid idx="7" val="7"/>
+     <textid idx="8" val="8"/>
+     <textid idx="9" val="9"/>
+     <textid idx="10" val="10"/>
+     <textid idx="11" val="11"/>
+     <textid idx="12" val="12"/>
+     <textid idx="13" val="13"/>
+     <textid idx="14" val="14"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,9 @@
+<ProjectConfig>
+ <version>04.05.01.523</version>
+ <targetName>eX705</targetName>
+ <manufacturerCode>513</manufacturerCode>
+ <orientation>0</orientation>
+ <panelMemory>4GB</panelMemory>
+ <enableUserMgmt>true</enableUserMgmt>
+ <enableWatchdog>true</enableWatchdog>
+</ProjectConfig>

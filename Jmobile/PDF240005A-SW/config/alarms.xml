@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alarms>
+    <multiLangs>
+        <langs defLangId="L1" curLangId="L1">
+            <lang name="Lang1" langCode="en-US" writingsystem="Any" defaultFont="Roboto" langId="L1" removable="false" keypads=""/>
+        </langs>
+        <MLTexts>
+            <MLText id="7" L1=""/>
+            <MLText id="0" L1="Not Triggered"/>
+            <MLText id="1" L1="Disabled"/>
+            <MLText id="2" L1="Triggered"/>
+            <MLText id="3" L1="Triggered Not Acked"/>
+            <MLText id="4" L1="Not Triggered Acked"/>
+            <MLText id="5" L1="Not Triggered Not Acked"/>
+            <MLText id="6" L1="Triggered Acked"/>
+            <MLText id="11" L1="E-Stop not healthy"/>
+        </MLTexts>
+    </multiLangs>
+    <defaultColors notTriggeredTxtColor="#000000" notTriggeredBgColor="#ffffff" disabledTxtColor="#000000" disabledBgColor="#ffffff" triggeredTxtColor="#000000" triggeredBgColor="#ffffff" triggeredNotAckedTxtColor="#000000" triggeredNotAckedBgColor="#ffffff" notTriggeredAckedTxtColor="#000000" notTriggeredAckedBgColor="#ffffff" notTriggeredNotAckedTxtColor="#000000" notTriggeredNotAckedBgColor="#ffffff" triggeredAckedTxtColor="#000000" triggeredAckedBgColor="#ffffff" ackTxtColor="#ff0000" ackBgColor="#ffff00"/>
+    <stateMLDesc NotTriggered="[0@Alarm]Not Triggered" Disabled="[1@Alarm]Disabled" Triggered="[2@Alarm]Triggered" TriggeredNotAcked="[3@Alarm]Triggered Not Acked" NotTriggeredAcked="[4@Alarm]Not Triggered Acked" NotTriggeredNotAcked="[5@Alarm]Not Triggered Not Acked" TriggeredAcked="[6@Alarm]Triggered Acked"/>
+    <bitMaskAlarm alarmId="1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm1</name>
+        <groups></groups>
+        <source>CPU_9351/P900_Global/HMI_Alarms[1]</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <touchAckNotify></touchAckNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[11@Alarm]E-Stop not healthy</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1>[7@Alarm]</customField_1>
+            <customField_2>[7@Alarm]</customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+</alarms>

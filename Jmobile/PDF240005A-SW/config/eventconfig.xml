@@ -1,0 +1,87 @@
+<eventConfiguration>
+ <manageInterval>700</manageInterval>
+ <eventsPerInterval>15</eventsPerInterval>
+ <maxUnprocessedEvents>120</maxUnprocessedEvents>
+ <dataDir>data</dataDir>
+ <archives>
+  <archive enable="True" name="AlarmBuffer1" id="1" size="1000" storageDevice="0" dataStorageLoc="">
+   <autoDump>false</autoDump>
+   <autoDumpStorageDevice>-1</autoDumpStorageDevice>
+   <autoDumpFileNameFormat>/%n/%y%M%d/%h%m%s</autoDumpFileNameFormat>
+   <autoDumpTimeSpec>0</autoDumpTimeSpec>
+   <autoDumpDateFormat></autoDumpDateFormat>
+   <autoDumpSeperateDateTime>false</autoDumpSeperateDateTime>
+   <autoDumpCleanUp>false</autoDumpCleanUp>
+   <autoDumpLangCode></autoDumpLangCode>
+   <autoDumpSign>true</autoDumpSign>
+  </archive>
+  <archive enable="True" name="AuditTrail" id="2" size="1000" storageDevice="0" dataStorageLoc="">
+   <autoDump>false</autoDump>
+   <autoDumpStorageDevice>-1</autoDumpStorageDevice>
+   <autoDumpFileNameFormat>/%n/%y%M%d/%h%m%s</autoDumpFileNameFormat>
+   <autoDumpTimeSpec>0</autoDumpTimeSpec>
+   <autoDumpDateFormat></autoDumpDateFormat>
+   <autoDumpSeperateDateTime>false</autoDumpSeperateDateTime>
+   <autoDumpCleanUp>false</autoDumpCleanUp>
+   <autoDumpLangCode></autoDumpLangCode>
+   <autoDumpSign>true</autoDumpSign>
+  </archive>
+ </archives>
+ <eventDescriptions>
+  <eventDescription evType="14">
+   <subTypeDescription archive="AlarmBuffer1" structPacking="0" subType="1" eventDataType="1">
+    <dataItem type="unsignedInt" name="alarmId"/>
+    <dataItem type="byte" name="alEvtType"/>
+    <dataItem type="byte" name="alState"/>
+    <dataItem type="double" name="alTS"/>
+    <dataItem type="double" name="alSourceVal"/>
+    <dataItem type="double" name="alPrevSourceVal"/>
+    <dataItem type="binary" name="alLiveData" length="50"/>
+   </subTypeDescription>
+  </eventDescription>
+  <eventDescription evType="25">
+   <subTypeDescription archive="AlarmBuffer1" structPacking="0" subType="1" eventDataType="4">
+    <dataItem type="byte" name="alEvtType"/>
+    <dataItem type="byte" name="alState"/>
+    <dataItem type="double" name="alTS"/>
+    <dataItem type="double" name="alSourceVal"/>
+    <dataItem type="string" name="alName"/>
+    <dataItem type="string" name="alDescription"/>
+    <dataItem type="string" name="alValue"/>
+   </subTypeDescription>
+  </eventDescription>
+  <eventDescription evType="101">
+   <subTypeDescription archive="AlarmBuffer1" structPacking="0" subType="1" eventDataType="5">
+    <dataItem type="byte" name="alEvtType"/>
+    <dataItem type="byte" name="alState"/>
+    <dataItem type="double" name="alTS"/>
+    <dataItem type="double" name="alSourceVal"/>
+    <dataItem type="short" name="alLiveDataLen" lengthOf="alLiveData"/>
+    <dataItem type="short" name="alInfoLen" lengthOf="alInfo"/>
+    <dataItem type="binary" name="alLiveData"/>
+    <dataItem type="string" name="alInfo"/>
+   </subTypeDescription>
+  </eventDescription>
+  <eventDescription evType="102">
+   <subTypeDescription archive="AlarmBuffer1" structPacking="0" subType="1" eventDataType="6">
+    <dataItem type="unsignedInt" name="alarmId"/>
+    <dataItem type="byte" name="alEvtType"/>
+    <dataItem type="byte" name="alState"/>
+    <dataItem type="double" name="alTS"/>
+    <dataItem type="double" name="alSourceVal"/>
+    <dataItem type="double" name="alPrevSourceVal"/>
+    <dataItem type="short" name="alLiveDataLen" lengthOf="alLiveData"/>
+    <dataItem type="short" name="alInfoLen" lengthOf="alInfo"/>
+    <dataItem type="binary" name="alLiveData"/>
+    <dataItem type="string" name="alInfo"/>
+   </subTypeDescription>
+  </eventDescription>
+  <eventDescription evType="18">
+   <subTypeDescription archive="AuditTrail" structPacking="1" subType="1" eventDataType="3">
+    <dataItem type="byte" name="interface"/>
+    <dataItem type="short" name="actionID"/>
+    <dataItem type="string" name="rowdata" length="75"/>
+   </subTypeDescription>
+  </eventDescription>
+ </eventDescriptions>
+</eventConfiguration>

@@ -1,0 +1,207 @@
+<wgtPage projectType="HMI Project" rev="1">
+ <object class="KeypadPageWgt" downloadPrepDone="false" staticOptEnable="false" id="Alphabet" pageType="keypad" dataWndSize="0,70" pageName="Alphabet" pageSize="763,303" usedFonts="Roboto">
+  <wgtStyle x="0" y="0" fitToSize="1" ver="0499004077" loadOnStartup="true" caps-present="true" cx="-1.23" cy="-1.26" color="rgb(76,76,77)" width="763" height="303" v="04.99.00.4077"/>
+  <object class="PageMLTextMgrWgt" mlFileName="" id="_PageMLTextMgrWgt" mgrType="Page">
+   <wgtStyle x="0" y="0" width="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" name="Lang1" removable="false" writingsystem="Any" keypads=";;" langCode="en-US" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt3" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000000" font-size="12" dy="5" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000000" cx="23.98" cy="24.51" x="2" y="48" font-sizepx="16" font-bold="true" height="49" altgrkey="0x01000000" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000000"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt21" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000003" font-size="12" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000003" cx="48.08" idx="14" cy="23.87" idy="10" x="665" y="48" keyImage="images/btnBack_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000003" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="96" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="2" max-font-size="64" sdy="-8" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000003"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt25" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000007" font-size="12" dy="6" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000007" cx="32.55" cy="23.87" x="695" y="99" font-sizepx="16" font-bold="true" height="49" altgrkey="0x01000007" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="66" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000007"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt41" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000005" font-size="12" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000005" cx="48.07" idx="14" cy="23.87" idy="5" x="665" y="150" keyImage="images/btnEnter_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000005" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="96" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="5" max-font-size="64" sdy="3" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000005"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt53" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000020" font-size="12" type="maintained" fill="rgb(200,200,200)" altgrshiftkey="0x01000020" cx="58.10" idx="8" cy="23.87" idy="3" x="645" y="201" keyImage="images/btnShift_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000020" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="116" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="-17" max-font-size="64" sdy="1" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000020"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt60" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000021" font-size="12" dy="6" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000021" cx="29.09" cy="23.87" x="702" y="252" font-sizepx="16" font-bold="true" height="49" altgrkey="0x01000021" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="59" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000021"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt1" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000001" font-size="12" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000001" cx="38.97" cy="23.87" idy="2" x="2" y="99" keyImage="images/btnTab_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000001" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="79" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="2" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000001"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt40" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000024" font-size="12" type="maintained" fill="rgb(200,200,200)" altgrshiftkey="0x01000024" cx="49.51" idx="5" cy="23.87" x="2" y="150" keyImage="images/btnCaps_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000024" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="100" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="-14" max-font-size="64" sdy="6" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000024"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt2" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000020" font-size="12" type="maintained" fill="rgb(200,200,200)" altgrshiftkey="0x01000020" cx="65.61" idx="8" cy="23.87" idy="3" x="2" y="201" keyImage="images/btnShift_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000020" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="131" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="-22" max-font-size="64" sdy="1" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000020"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt4" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000021" font-size="12" dy="6" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000021" cx="34.51" cy="23.87" x="2" y="252" font-sizepx="16" font-bold="true" height="49" altgrkey="0x01000021" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="70" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000021"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt61" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000023" font-size="12" dy="6" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000023" cx="33.99" cy="23.87" x="74" y="252" font-sizepx="16" font-bold="true" height="49" altgrkey="0x01000023" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="69" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000023"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt57" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x40" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0x40" cx="24.13" cy="23.87" x="145" y="252" font-sizepx="16" font-bold="true" height="49" altgrkey="0x40" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x40"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt28" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x20" font-size="12" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x20" cx="138.80" cy="23.87" x="196" y="252" font-sizepx="16" height="49" altgrkey="0x20" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="279" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x20"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt51" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01001103" font-size="12" dy="6" type="maintained" fill="rgb(200,200,200)" altgrshiftkey="0x01001103" cx="34.48" cy="23.87" x="477" y="252" font-sizepx="16" font-bold="true" height="49" altgrkey="0x01001103" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="70" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01001103"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt56" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000012" font-size="12" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000012" cx="23.97" idx="-9" cy="23.87" idy="-4" x="549" y="252" keyImage="images/btnLeft_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000012" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="20" max-font-size="64" sdy="20" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000012"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt55" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x01000014" font-size="12" type="momentary" fill="rgb(200,200,200)" altgrshiftkey="0x01000014" cx="23.97" idx="-9" cy="23.87" idy="-4" x="600" y="252" keyImage="images/btnRight_icon.svg" font-sizepx="16" height="49" altgrkey="0x01000014" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" showImage="1" sdx="20" max-font-size="64" sdy="20" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x01000014"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt54" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x3f" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0x3f" cx="23.97" cy="23.87" x="651" y="252" font-sizepx="16" height="49" altgrkey="0x3f" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x3f"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt42" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="7A" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="24.54" cy="23.87" x="135" y="201" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="5A"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt43" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="78" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="24.54" cy="23.87" x="186" y="201" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="58"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt44" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="63" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="24.54" cy="23.87" x="237" y="201" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="43"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt48" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="76" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="24.54" cy="23.87" x="288" y="201" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="56"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt45" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="62" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="24.54" cy="23.87" x="339" y="201" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="42"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt46" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="6E" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="24.54" cy="23.87" x="390" y="201" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="4E"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt47" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="6D" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="24.54" cy="23.87" x="441" y="201" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="4D"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt58" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x2C" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0x2c" cx="23.97" cy="23.87" x="492" y="201" font-sizepx="16" font-bold="true" height="49" altgrkey="0x2c" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt49" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x2E" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0x2e" cx="23.97" cy="23.87" x="543" y="201" font-sizepx="16" font-bold="true" height="49" altgrkey="0x2e" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt50" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x2f" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0x2f" cx="23.97" cy="23.87" x="594" y="201" font-sizepx="16" font-bold="true" height="49" altgrkey="0x2f" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x2f"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt29" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="61" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="104" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="41"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt30" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="73" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="155" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="53"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt31" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="64" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="206" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="44"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt32" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="66" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="257" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="46"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt33" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="67" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="308" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="47"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt34" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="68" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="359" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="48"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt35" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="6A" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="410" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="4A"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt36" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="6B" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="461" y="150" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="4B"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt37" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="6C" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0xf2" cx="23.97" cy="23.87" x="512" y="150" font-sizepx="16" font-bold="true" height="49" altgrkey="0xc7" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="4C"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt39" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x3B" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0xba" cx="23.97" cy="23.87" x="563" y="150" font-sizepx="16" font-bold="true" height="49" altgrkey="0xe0" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt38" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x3A" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0x0a7" cx="23.97" cy="23.87" x="614" y="150" font-sizepx="16" font-bold="true" height="49" altgrkey="0xf9" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt26" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="71" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="83" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="51"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt18" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="77" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="134" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="57"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt13" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="65" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="185" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="45"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt15" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="74" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="287" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="54"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt20" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="79" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="338" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="59"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt27" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="72" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="236" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="52"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt16" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="75" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="389" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="55"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt14" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="69" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="440" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="49"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt24" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="70" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="542" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="50"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt23" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="6F" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="491" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="4F"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt19" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x5B" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0xe9" cx="23.97" cy="23.87" x="593" y="99" font-sizepx="16" font-bold="true" height="49" altgrkey="0xe8" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x5B"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt22" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x5D" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="644" y="99" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x5D"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt62" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="31" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="53" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="21"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt63" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="32" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="104" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="40"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt64" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x33" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0xa3" cx="23.97" cy="23.87" x="155" y="48" font-sizepx="16" font-bold="true" height="49" altgrkey="0x33" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x23"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt65" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="34" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="206" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="24"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt66" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="35" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="257" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="25"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt67" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="36" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="308" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="5E"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt68" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="37" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="359" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="26"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt69" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="38" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="410" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="2A"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt70" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="39" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="461" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="28"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt59" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="30" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="512" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="29"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt12" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="0x2B" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" altgrshiftkey="0xec" cx="10.72" cy="45.94" x="614" y="48" font-sizepx="16" font-bold="true" height="49" altgrkey="0x2b" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="0x2B"/>
+  </object>
+  <object class="KeyButtonWgt" id="KeyButtonWgt11" hmiStyle="type:btn">
+   <wgtStyle form="standard" pushColor="rgb(0,176,199)" key="2D" font-size="12" dy="5" type="momentary" fill="rgb(230,230,230)" cx="23.97" cy="23.87" x="563" y="48" font-sizepx="16" font-bold="true" height="49" font-color="rgb(76,76,77)" releasePath="images\Btnkey_rect_grayUp.svg" min-font-size="8" width="49" vert-align="top" wrap-type="wordWrap" singleFillColor="0" image-color="rgb(76,76,77)" font-family="Roboto" value="0" max-font-size="64" sdy="5" needlePath="images\Btnkey_rect_grayDwn.svg" shiftkey="5F"/>
+  </object>
+  <object class="ImageWgt" id="keypad_Icon">
+   <wgtStyle imagePath="images/keyboard-grab-dark.svg" x="13" y="12" wgtStaticOpt="dynamic" stroke-width="1" cx="10.75" cy="11" stroke="rgb(237,237,237)" width="22" height="22" fill="none" forcePaint="16"/>
+  </object>
+  <object class="KeypadEditBoxWgt" id="keypad_Value">
+   <wgtStyle font-size="12" cx="354.77" cy="21.25" x="49" y="1" stroke="none" font-sizepx="16" height="44" font-color="rgb(76,76,77)" readWrite="true" min-font-size="8" width="713" alignment="right" vert-align="middle" wrap-type="wordWrap" frame="true" font-family="Roboto" text="Value" keypad-type="None" max-font-size="64"/>
+  </object>
+  <object class="KeypadLabelWgt" id="keypad_Description">
+   <wgtStyle font-size="12" cx="23.79" cy="9.47" x="57" marker="true" y="13" font-sizepx="16" height="20" font-color="rgb(200,200,200)" min-font-size="8" width="173" vert-align="top" wrap-type="wordWrap" forcePaint="true" font-family="Roboto" text="Description" keypad-type="None" max-font-size="64"/>
+  </object>
+ </object>
+</wgtPage>
